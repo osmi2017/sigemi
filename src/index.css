@@ -1,0 +1,182 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.error-message{
+  color: red;
+}
+
+.loginFormControl {
+  width: 20px; /* Adjust the width as per your preference */
+}
+.labelLoginForm{
+  color:antiquewhite;
+  font-size: large;
+  font-weight: bold;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+  width: 400px;
+  margin: 0 auto; /* Center horizontally */
+  background-color: rgb(116, 179, 179);
+  /* Center vertically */
+ 
+  margin-top: 100px;
+  
+}
+
+.main-container{
+  position: relative;
+}
+
+.mainheader{
+  background-color: rgb(116, 179, 179);
+  height: 45px;
+  position: fixed;
+  z-index: 5;
+  width: 100%;
+  
+}
+
+.sideBar{
+  position: fixed;
+  z-index: 5;
+}
+
+.profilebutton{
+  margin-right: 25px;
+}
+
+.mainMenu{
+  border: solid;
+  width: 100px;
+  margin-right: 25px;
+}
+
+.Menuactive{
+  color: blueviolet;
+}
+
+.logoutIcon{
+ width: 20px; 
+ height: 20px;
+}
+
+.deconnection{
+  color:antiquewhite;
+  
+}
+
+.contentmain{
+  position: relative;
+  max-width:  65%;
+ margin: auto;
+  justify-content: center;
+ 
+}
+
+.contentinfo{
+  position: relative;
+ 
+}
+
+.userphoto{
+  width: 100px;
+  height: 100px;
+}
+
+.buttonadd{
+  text-align: right;
+}
+.addbutton{
+  background-color:  rgb(116, 179, 179);
+  font-size: 18px;
+  color: #fff; /* Change the text color as desired */
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 75px;
+  height: 25px;
+  float: right;
+  margin-bottom: 5px;
+  margin-right: 5px;
+}
+
+.addbutton:hover {
+  background-color: #fff;
+  color: rgb(116, 179, 179);
+  
+  border: solid;
+  border-color: rgb(116, 179, 179);
+  
+}
+
+.closebutton{
+  background-color:  rgb(224, 72, 72);
+  font-size: 18px;
+  color: #fff; /* Change the text color as desired */
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 25px;
+  height: 25px;
+  float: right;
+  margin-bottom: 5px;
+}
+
+.closebutton:hover {
+  background-color: #fff;
+  color:  rgb(224, 72, 72);
+  
+  border: solid;
+  border-color:  rgb(224, 72, 72);
+  
+}
+
+.alert-container {
+  position: fixed;
+  top: 20px; /* Adjust as needed */
+  right: 20px; /* Adjust as needed */
+  z-index: 9999; /* Ensure it's above other elements */
+}
+
+.alert {
+  padding: 15px;
+  border-radius: 5px;
+  animation: slideInRight 0.5s forwards, fadeOut 0.5s forwards 4s; /* Slide in from right and fade out after 4 seconds */
+}
+
+@keyframes slideInRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
